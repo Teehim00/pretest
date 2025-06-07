@@ -26,7 +26,11 @@ export default function QuoteFilter({
       <select
         className="select select-bordered border-1 rounded-xl h-10 bg-white text-gray-700"
         value={sort}
-        onChange={(e) => onSortChange(e.target.value as any)}
+        onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+          onSortChange(
+            e.target.value as "default" | "like" | "dislike" | "name"
+          )
+        }
       >
         <option value="default">🔀 Default</option>
         <option value="like">🔥 Most Likes</option>

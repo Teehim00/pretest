@@ -1,9 +1,9 @@
 "use client";
-import { useUser } from "@clerk/nextjs";
+
 import LogoutButton from "./LogoutButton";
 
 export default function Topbar() {
-  const { user } = useUser();
+
 
   return (
     <div className="navbar bg-zinc-800 text-white shadow-sm ">

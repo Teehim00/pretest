@@ -12,7 +12,7 @@ type VoteMap = {
 export default function QuoteLayout() {
   const [votes, setVotes] = useState<VoteMap>({});
   const [search, setSearch] = useState("");
-  const [filter, setFilter] = useState<"all" | "like" | "dislike">("all");
+  const [filter] = useState<"all" | "like" | "dislike">("all");
   const [sortOption, setSortOption] = useState<
     "default" | "like" | "dislike" | "name"
   >("default");
